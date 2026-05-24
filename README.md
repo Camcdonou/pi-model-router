@@ -79,6 +79,10 @@ Add to `~/.pi/agent/settings.json`:
 
 Restart pi (or run `/reload`). You should see a `⚡` router status in the footer. Type `/router status` to confirm it's active.
 
+## Related
+
+- [pi-synthetic-search](https://github.com/Camcdonou/syn-search) — Web search extension for pi using Synthetic's Search API
+
 ## Configuration
 
 Edit the `TIERS` constant in `index.ts` to change model mappings. Edit `HEAVY_KEYWORDS`, `MID_KEYWORDS`, and `CHEAP_REGEX` to tune classification heuristics.
