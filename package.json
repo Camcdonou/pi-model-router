@@ -1,0 +1,7 @@
+{
+  "name": "pi-model-router",
+  "keywords": ["pi-package"],
+  "pi": {
+    "extensions": ["./index.ts"]
+  }
+}
