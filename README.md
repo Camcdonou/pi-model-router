@@ -51,13 +51,33 @@ If you select a model via `/model`, Ctrl+P, or `/router <tier>`, auto-routing pa
 
 ## Installation
 
+### Option 1: Clone and link locally
+
+```bash
+git clone https://github.com/Camcdonou/pi-model-router.git ~/Sources/Repo/pi-model-router
+```
+
 Add to `~/.pi/agent/settings.json`:
 
 ```json
 {
-  "extensions": ["/path/to/pi-model-router"]
+  "extensions": ["/Users/connormcdonough/Sources/Repo/pi-model-router"]
 }
 ```
+
+### Option 2: Install as a git package
+
+Add to `~/.pi/agent/settings.json`:
+
+```json
+{
+  "packages": ["git:github.com/Camcdonou/pi-model-router"]
+}
+```
+
+### Verify
+
+Restart pi (or run `/reload`). You should see a `⚡` router status in the footer. Type `/router status` to confirm it's active.
 
 ## Configuration
 
